@@ -9,7 +9,6 @@ theme:
   name: material
   language: zh
   features:
-    - navigation.tracking
     - navigation.indexes
     - navigation.expand
     - navigation.top
@@ -55,7 +54,6 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-
 plugins:
   - git-revision-date-localized:
       type: datetime
@@ -80,6 +78,8 @@ extra_css:
   - https://jsd.cdn.zzko.cn/npm/katex@0.16.4/dist/katex.min.css
 
 extra_javascript: 
+  # 自动令所有第三方链接在新标签页中打开
+  - supports/js/xlink.js
   # 如果公式渲染出现问题，请检查如下脚本
   - supports/js/katex.js
   - https://jsd.cdn.zzko.cn/npm/katex@0.16.4/dist/katex.min.js
